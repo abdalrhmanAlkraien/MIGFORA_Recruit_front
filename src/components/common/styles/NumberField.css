@@ -1,0 +1,84 @@
+.number-field__control {
+  display:          flex;
+  align-items:      stretch;
+  height:           42px;
+  box-sizing:       border-box;
+  background-color: var(--field-bg);
+  border:           1px solid var(--field-border);
+  border-radius:    6px;
+  overflow:         hidden;
+  transition:       border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.number-field__control:focus-within {
+  border-color:     var(--color-orange);
+  box-shadow:       var(--focus-ring);
+  background-color: var(--field-bg-focus);
+}
+
+.form-field--error .number-field__control {
+  border-color: var(--color-danger);
+  box-shadow:   0 0 0 3px var(--color-danger-bg);
+}
+
+.number-field__control--disabled {
+  opacity: 0.55;
+}
+
+.number-field__input {
+  flex:                 1;
+  min-width:            0;
+  padding-inline:       12px;
+  border:               none;
+  outline:              none;
+  background:           transparent;
+  font-family:          var(--font-body);
+  font-size:            14px;
+  font-variant-numeric: tabular-nums;
+  text-align:           center;
+  color:                var(--text-primary);
+}
+
+.number-field__input::placeholder {
+  color:       var(--text-muted);
+  font-weight: 300;
+}
+
+.number-field__suffix {
+  display:              flex;
+  align-items:          center;
+  padding-inline-end:   10px;
+  font-family:          var(--font-body);
+  font-size:            13px;
+  color:                var(--text-secondary);
+  white-space:          nowrap;
+}
+
+.number-field__step {
+  width:           38px;
+  flex-shrink:     0;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  padding:         0;
+  border:          none;
+  background:      transparent;
+  color:           var(--text-secondary);
+  cursor:          pointer;
+  transition:      background-color 0.15s ease, color 0.15s ease;
+}
+
+.number-field__step:first-child { border-inline-end: 1px solid var(--field-border); }
+.number-field__step:last-child  { border-inline-start: 1px solid var(--field-border); }
+
+.number-field__step:hover:not(:disabled) {
+  background-color: var(--nav-link-hover-bg);
+  color:            var(--text-primary);
+}
+
+.number-field__step:disabled {
+  opacity: 0.35;
+  cursor:  not-allowed;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

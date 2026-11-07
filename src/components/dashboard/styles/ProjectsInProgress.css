@@ -1,0 +1,40 @@
+.projects-table__name {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  min-width:      0;
+}
+
+.projects-table__title {
+  font-weight: 500;
+  color:       var(--text-primary);
+}
+
+.projects-table__id {
+  font-family: var(--font-mono);
+  font-size:   11px;
+  color:       var(--text-muted);
+}
+
+.projects-table__stage {
+  white-space: nowrap;
+  color:       var(--text-secondary);
+}
+
+.projects-table__progress {
+  width:     180px;
+  min-width: 140px;
+}
+
+.projects-table__updated {
+  white-space: nowrap;
+  color:       var(--text-secondary);
+}
+
+/* The DataTable sits flush inside the Card */
+.card .data-table {
+  border:        none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

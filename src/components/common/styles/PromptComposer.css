@@ -1,0 +1,268 @@
+.prompt-composer {
+  display:        flex;
+  flex-direction: column;
+  gap:            6px;
+  width:          100%;
+}
+
+/* ─── Box ─────────────────────────────────────────────────── */
+.prompt-composer__box {
+  display:          flex;
+  flex-direction:   column;
+  gap:              8px;
+  padding-block:    10px 8px;
+  padding-inline:   12px;
+  background-color: var(--field-bg);
+  border:           1px solid var(--field-border);
+  border-radius:    12px;
+  transition:       border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.prompt-composer__box:focus-within {
+  border-color:     var(--color-orange);
+  box-shadow:       var(--focus-ring);
+  background-color: var(--field-bg-focus);
+}
+
+.prompt-composer__box--error,
+.prompt-composer__box--error:focus-within {
+  border-color: var(--color-danger);
+  box-shadow:   0 0 0 3px var(--color-danger-bg);
+}
+
+.prompt-composer--disabled .prompt-composer__box {
+  opacity: 0.6;
+}
+
+/* ─── Context chips ───────────────────────────────────────── */
+.prompt-composer__context {
+  display:   flex;
+  flex-wrap: wrap;
+  gap:       6px;
+}
+
+.prompt-composer__chip {
+  display:          inline-flex;
+  align-items:      center;
+  gap:              6px;
+  max-width:        100%;
+  padding-block:    3px;
+  padding-inline:   8px 4px;
+  border-radius:    6px;
+  background-color: var(--color-warning-bg);
+  border:           1px solid var(--color-warning-border);
+  font-family:      var(--font-body);
+  font-size:        12px;
+}
+
+.prompt-composer__chip-id {
+  font-family: var(--font-mono);
+  font-size:   11px;
+  font-weight: 600;
+  color:       var(--color-warning);
+}
+
+.prompt-composer__chip-label {
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+  color:         var(--text-primary);
+}
+
+.prompt-composer__chip-remove {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  width:           16px;
+  height:          16px;
+  padding:         0;
+  border:          none;
+  border-radius:   50%;
+  background:      transparent;
+  color:           var(--text-secondary);
+  cursor:          pointer;
+}
+
+.prompt-composer__chip-remove:hover {
+  background-color: var(--nav-link-hover-bg);
+  color:            var(--text-primary);
+}
+
+/* ─── Input row ───────────────────────────────────────────── */
+.prompt-composer__main {
+  display:     flex;
+  align-items: flex-end;
+  gap:         8px;
+}
+
+.prompt-composer__input {
+  flex:        1;
+  min-width:   0;
+  box-sizing:  border-box;
+  padding:     0;
+  border:      none;
+  outline:     none;
+  resize:      none;
+  background:  transparent;
+  font-family: var(--font-body);
+  font-size:   14px;
+  line-height: 22px;
+  color:       var(--text-primary);
+}
+
+.prompt-composer__input::placeholder {
+  color:       var(--text-muted);
+  font-weight: 300;
+}
+
+/* ─── Toolbar ─────────────────────────────────────────────── */
+.prompt-composer__toolbar {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             8px;
+}
+
+.prompt-composer__toolbar-start,
+.prompt-composer__toolbar-end {
+  display:     flex;
+  align-items: center;
+  gap:         8px;
+}
+
+.prompt-composer__send {
+  width:            32px;
+  height:           32px;
+  flex-shrink:      0;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  padding:          0;
+  border:           none;
+  border-radius:    8px;
+  background-color: var(--color-orange);
+  color:            var(--color-navy);
+  cursor:           pointer;
+  transition:       background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.prompt-composer__send:hover:not(:disabled) {
+  background-color: var(--color-orange-2);
+}
+
+.prompt-composer__send:focus-visible {
+  outline:    none;
+  box-shadow: var(--focus-ring);
+}
+
+.prompt-composer__send:disabled {
+  opacity: 0.35;
+  cursor:  not-allowed;
+}
+
+.prompt-composer__send--stop {
+  background-color: var(--color-navy);
+  color:            var(--color-white);
+}
+
+.prompt-composer__send--stop:hover {
+  background-color: var(--color-navy-3);
+}
+
+.prompt-composer__count {
+  font-family:          var(--font-body);
+  font-size:            11px;
+  font-variant-numeric: tabular-nums;
+  color:                var(--text-muted);
+}
+
+.prompt-composer__count--over {
+  color:       var(--color-danger);
+  font-weight: 600;
+}
+
+/* ─── Note under box ──────────────────────────────────────── */
+.prompt-composer__note {
+  margin:      0;
+  font-family: var(--font-body);
+  font-size:   11px;
+  color:       var(--text-muted);
+}
+
+.prompt-composer__note--warning { color: var(--color-warning); }
+
+.prompt-composer__note--end {
+  display:         flex;
+  justify-content: flex-end;
+}
+
+/* ─── Compact variant ─────────────────────────────────────── */
+.prompt-composer--compact .prompt-composer__box {
+  padding-block:  6px;
+  padding-inline: 12px 6px;
+  border-radius:  10px;
+}
+
+.prompt-composer--compact .prompt-composer__main {
+  align-items: center;
+}
+
+/* ─── Mention list ────────────────────────────────────────── */
+.prompt-composer__mentions {
+  min-width: 260px;
+}
+
+.prompt-composer__mention-list {
+  list-style: none;
+  margin:     0;
+  padding:    4px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.prompt-composer__mention {
+  display:        flex;
+  align-items:    center;
+  gap:            10px;
+  padding-block:  8px;
+  padding-inline: 10px;
+  border-radius:  6px;
+  font-size:      13px;
+  color:          var(--text-primary);
+  cursor:         pointer;
+}
+
+.prompt-composer__mention--active {
+  background-color: var(--nav-link-hover-bg);
+}
+
+.prompt-composer__mention-id {
+  font-family: var(--font-mono);
+  font-size:   11px;
+  font-weight: 600;
+  color:       var(--color-warning);
+  flex-shrink: 0;
+}
+
+.prompt-composer__mention-label {
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+}
+
+.prompt-composer__mention-empty {
+  padding:    12px 10px;
+  font-size:  13px;
+  color:      var(--text-muted);
+  text-align: center;
+}
+
+/* ═══ DARK MODE ═══ */
+[data-theme="dark"] .prompt-composer__send--stop {
+  background-color: var(--color-white);
+  color:            var(--color-navy);
+}
+
+[data-theme="dark"] .prompt-composer__send--stop:hover {
+  background-color: var(--color-off-white);
+}

@@ -1,0 +1,54 @@
+.page-header {
+  display:          flex;
+  flex-direction:   column;
+  gap:              10px;
+  margin-block-end: 28px;
+}
+
+.page-header__row {
+  display:         flex;
+  align-items:     flex-start;
+  justify-content: space-between;
+  gap:             16px;
+}
+
+.page-header__text {
+  display:        flex;
+  flex-direction: column;
+  gap:            6px;
+  min-width:      0;
+}
+
+.page-header__title {
+  margin:         0;
+  font-family:    var(--font-heading);
+  font-size:      22px;
+  font-weight:    700;
+  letter-spacing: 0.01em;
+  color:          var(--text-primary);
+}
+
+.page-header__meta {
+  display:     flex;
+  flex-wrap:   wrap;
+  align-items: center;
+  gap:         8px;
+}
+
+.page-header__subtitle {
+  margin:      0;
+  font-family: var(--font-body);
+  font-size:   14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color:       var(--text-secondary);
+}
+
+.page-header__action {
+  flex-shrink: 0;
+  display:     flex;
+  align-items: center;
+  gap:         8px;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

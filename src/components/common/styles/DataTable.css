@@ -1,0 +1,143 @@
+.data-table {
+  display:          flex;
+  flex-direction:   column;
+  min-width:        0;
+  overflow:         hidden;
+  background-color: var(--bg-surface);
+  border:           1px solid var(--border-color);
+  border-radius:    12px;
+  font-family:      var(--font-body);
+}
+
+.data-table__scroll {
+  overflow-x: auto;
+}
+
+.data-table__table {
+  width:           100%;
+  border-collapse: separate;
+  border-spacing:  0;
+}
+
+.data-table--busy .data-table__table {
+  opacity:    0.55;
+  transition: opacity 0.2s ease;
+}
+
+/* ─── Header ──────────────────────────────────────────────── */
+.data-table__th {
+  padding-block:    10px;
+  padding-inline:   16px;
+  background-color: var(--bg-surface-2);
+  border-block-end: 1px solid var(--border-color);
+  font-size:        11px;
+  font-weight:      600;
+  letter-spacing:   0.06em;
+  text-transform:   uppercase;
+  text-align:       start;
+  white-space:      nowrap;
+  color:            var(--text-muted);
+}
+
+.data-table__sort {
+  display:        inline-flex;
+  align-items:    center;
+  gap:            6px;
+  padding:        0;
+  border:         none;
+  border-radius:  4px;
+  background:     none;
+  font:           inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color:          inherit;
+  cursor:         pointer;
+}
+
+.data-table__sort:hover,
+.data-table__sort--active {
+  color: var(--text-primary);
+}
+
+.data-table__sort:focus-visible {
+  outline:    none;
+  box-shadow: var(--focus-ring);
+}
+
+.data-table__sort-icon {
+  display: flex;
+  opacity: 0.5;
+}
+
+.data-table__sort--active .data-table__sort-icon {
+  opacity: 1;
+  color:   var(--color-orange);
+}
+
+/* ─── Cells ───────────────────────────────────────────────── */
+.data-table__td {
+  padding-block:    12px;
+  padding-inline:   16px;
+  border-block-end: 1px solid var(--border-color);
+  font-size:        13px;
+  color:            var(--text-primary);
+  vertical-align:   middle;
+}
+
+.data-table__row:last-child .data-table__td {
+  border-block-end: none;
+}
+
+.data-table__th--center,
+.data-table__td--center { text-align: center; }
+
+.data-table__th--end,
+.data-table__td--end {
+  text-align:           end;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table__th--select,
+.data-table__td--select {
+  width:              40px;
+  padding-inline-end: 0;
+}
+
+.data-table__th--actions,
+.data-table__td--actions {
+  width:      48px;
+  text-align: end;
+}
+
+/* ─── Rows ────────────────────────────────────────────────── */
+.data-table__row--clickable {
+  cursor: pointer;
+}
+
+.data-table__row--clickable:hover .data-table__td {
+  background-color: var(--nav-link-hover-bg);
+}
+
+.data-table__row--clickable:focus-visible {
+  outline:        2px solid var(--color-orange);
+  outline-offset: -2px;
+}
+
+.data-table__row--selected .data-table__td {
+  background-color: var(--nav-link-active-bg);
+}
+
+.data-table__empty {
+  padding: 0;
+}
+
+.data-table__sr-only {
+  position:    absolute;
+  width:       1px;
+  height:      1px;
+  overflow:    hidden;
+  clip:        rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

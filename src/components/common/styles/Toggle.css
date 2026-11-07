@@ -1,0 +1,88 @@
+.toggle {
+  display:     flex;
+  align-items: flex-start;
+  gap:         12px;
+  font-family: var(--font-body);
+}
+
+.toggle--row {
+  justify-content: space-between;
+}
+
+.toggle--disabled {
+  opacity: 0.55;
+}
+
+.toggle__switch {
+  position:         relative;
+  flex-shrink:      0;
+  padding:          0;
+  border:           none;
+  border-radius:    999px;
+  background-color: var(--border-color-2);
+  cursor:           pointer;
+  transition:       background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle__switch--md { width: 36px; height: 20px; }
+.toggle__switch--sm { width: 28px; height: 16px; }
+
+.toggle__switch--on {
+  background-color: var(--color-orange);
+}
+
+.toggle__switch:focus-visible {
+  outline:    none;
+  box-shadow: var(--focus-ring);
+}
+
+.toggle__switch:disabled {
+  cursor: not-allowed;
+}
+
+.toggle__thumb {
+  position:           absolute;
+  inset-block-start:  2px;
+  inset-inline-start: 2px;
+  border-radius:      50%;
+  background-color:   var(--color-white);
+  box-shadow:         0 1px 3px rgba(8, 15, 24, 0.25);
+  transition:         inset-inline-start 0.2s ease;
+}
+
+.toggle__switch--md .toggle__thumb { width: 16px; height: 16px; }
+.toggle__switch--sm .toggle__thumb { width: 12px; height: 12px; }
+
+.toggle__switch--md.toggle__switch--on .toggle__thumb { inset-inline-start: 18px; }
+.toggle__switch--sm.toggle__switch--on .toggle__thumb { inset-inline-start: 14px; }
+
+.toggle__text {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+}
+
+.toggle__label {
+  font-size:   14px;
+  font-weight: 500;
+  line-height: 20px;
+  color:       var(--text-primary);
+  cursor:      pointer;
+}
+
+.toggle__description {
+  font-size:   12px;
+  line-height: 1.5;
+  color:       var(--text-secondary);
+}
+
+/* ═══ DARK MODE ═══ */
+[data-theme="dark"] .toggle__switch {
+  background-color: var(--bg-surface-2);
+  box-shadow:       inset 0 0 0 1px var(--border-color-2);
+}
+
+[data-theme="dark"] .toggle__switch--on {
+  background-color: var(--color-orange);
+  box-shadow:       none;
+}

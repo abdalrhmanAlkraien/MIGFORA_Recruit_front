@@ -1,0 +1,102 @@
+.sidebar-profile {
+  padding:    12px 16px 16px 16px;
+  border-top: 1px solid var(--border-color);
+  cursor:     pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-profile:hover {
+  background-color: var(--nav-link-hover-bg);
+}
+
+/* ─── Badge ───────────────────────────────────────────────── */
+
+.sidebar-profile__badge {
+  display:        inline-block;
+  font-family:    var(--font-heading);
+  font-size:      10px;
+  font-weight:    700;
+  letter-spacing: 0.08em;
+  color:          var(--color-white);
+  padding:        3px 8px;
+  border-radius:  4px;
+  margin-bottom:  10px;
+  text-transform: uppercase;
+}
+
+.sidebar-profile__badge--basic      { background-color: #6B7280; }
+.sidebar-profile__badge--growth     { background-color: #3B82F6; }
+.sidebar-profile__badge--enterprise { background-color: #7C3AED; }
+
+/* ─── Row ─────────────────────────────────────────────────── */
+
+.sidebar-profile__row {
+  display:     flex;
+  align-items: center;
+  gap:         10px;
+}
+
+/* ─── Avatar ──────────────────────────────────────────────── */
+
+.sidebar-profile__avatar {
+  width:         36px;
+  height:        36px;
+  border-radius: 50%;
+  display:       flex;
+  align-items:   center;
+  justify-content: center;
+  font-family:   var(--font-heading);
+  font-size:     15px;
+  font-weight:   700;
+  color:         var(--color-white);
+  flex-shrink:   0;
+}
+
+.sidebar-profile__avatar--orange { background-color: var(--color-orange); }
+.sidebar-profile__avatar--blue   { background-color: #3B82F6; }
+.sidebar-profile__avatar--purple { background-color: #7C3AED; }
+
+/* ─── Info ────────────────────────────────────────────────── */
+
+.sidebar-profile__info {
+  display:        flex;
+  flex-direction: column;
+  flex:           1;
+  min-width:      0;
+}
+
+.sidebar-profile__name {
+  font-family:   var(--font-body);
+  font-size:     13px;
+  font-weight:   600;
+  color:         var(--text-primary);
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-profile__email {
+  font-family:   var(--font-body);
+  font-size:     11px;
+  color:         var(--text-muted);
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-profile__arrow {
+  font-size:   18px;
+  color:       var(--text-muted);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.sidebar-profile--rail {
+  padding:         12px 0;
+  display:         flex;
+  justify-content: center;
+}
+
+.sidebar-profile--rail .sidebar-profile__row {
+  justify-content: center;
+}

@@ -1,0 +1,62 @@
+.breadcrumbs {
+  font-family: var(--font-body);
+  font-size:   12px;
+}
+
+.breadcrumbs__list {
+  list-style:  none;
+  margin:      0;
+  padding:     0;
+  display:     flex;
+  flex-wrap:   wrap;
+  align-items: center;
+  gap:         4px;
+}
+
+.breadcrumbs__item {
+  display:     inline-flex;
+  align-items: center;
+  gap:         4px;
+  min-width:   0;
+}
+
+.breadcrumbs__link {
+  border-radius:   4px;
+  color:           var(--text-secondary);
+  text-decoration: none;
+  transition:      color 0.15s ease;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--color-orange);
+}
+
+.breadcrumbs__link:focus-visible {
+  outline:    none;
+  box-shadow: var(--focus-ring);
+}
+
+.breadcrumbs__current {
+  max-width:     240px;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+  font-weight:   500;
+  color:         var(--text-primary);
+}
+
+.breadcrumbs__ellipsis {
+  color:  var(--text-muted);
+  cursor: default;
+}
+
+.breadcrumbs__separator {
+  display: flex;
+  color:   var(--text-muted);
+}
+
+.breadcrumbs__separator--rtl {
+  transform: scaleX(-1);
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

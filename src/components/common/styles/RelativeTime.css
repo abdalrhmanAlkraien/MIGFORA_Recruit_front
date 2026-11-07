@@ -1,0 +1,10 @@
+.relative-time {
+  font-variant-numeric: tabular-nums;
+  white-space:          nowrap;
+}
+
+.relative-time--empty {
+  color: var(--text-muted);
+}
+
+/* ═══ DARK MODE ═══ — inherits color */

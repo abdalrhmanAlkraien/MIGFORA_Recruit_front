@@ -1,0 +1,70 @@
+.stats-row {
+  display:               grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:                   20px;
+}
+
+.stat-card__content {
+  display:        flex;
+  flex-direction: column;
+  gap:            10px;
+  min-height:     104px;
+}
+
+.stat-card__top {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             12px;
+}
+
+.stat-card__label {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+}
+
+.stat-card__icon {
+  width:           36px;
+  height:          36px;
+  flex-shrink:     0;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  border-radius:   10px;
+}
+
+.stat-card__icon--brand   { background-color: var(--nav-link-active-bg); color: var(--color-orange); }
+.stat-card__icon--warning { background-color: var(--color-warning-bg);   color: var(--color-warning); }
+.stat-card__icon--info    { background-color: var(--color-info-bg);      color: var(--color-info); }
+.stat-card__icon--success { background-color: var(--color-success-bg);   color: var(--color-success); }
+.stat-card__icon--danger  { background-color: var(--color-danger-bg);    color: var(--color-danger); }
+.stat-card__icon--neutral { background-color: var(--nav-link-hover-bg);  color: var(--text-secondary); }
+
+.stat-card__value {
+  font-family:          var(--font-heading);
+  font-size:            28px;
+  font-weight:          700;
+  line-height:          1.1;
+  font-variant-numeric: tabular-nums;
+  color:                var(--text-primary);
+}
+
+.stat-card__hint {
+  font-family: var(--font-body);
+  font-size:   12px;
+  color:       var(--text-secondary);
+}
+
+@media (max-width: 1100px) {
+  .stats-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .stats-row { grid-template-columns: 1fr; }
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

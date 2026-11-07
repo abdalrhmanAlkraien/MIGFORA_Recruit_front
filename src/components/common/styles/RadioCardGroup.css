@@ -1,0 +1,147 @@
+.radio-card-group {
+  min-width: 0;
+  margin:    0;
+  padding:   0;
+  border:    none;
+}
+
+.radio-card-group__legend {
+  padding:          0;
+  margin-block-end: 8px;
+}
+
+/* ─── Grid ────────────────────────────────────────────────── */
+.radio-card-group__grid {
+  display: grid;
+  gap:     12px;
+}
+
+.radio-card-group__grid--auto { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.radio-card-group__grid--2    { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.radio-card-group__grid--3    { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.radio-card-group__grid--4    { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (max-width: 640px) {
+  .radio-card-group__grid--2,
+  .radio-card-group__grid--3,
+  .radio-card-group__grid--4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Card ────────────────────────────────────────────────── */
+.radio-card-group__card {
+  position:         relative;
+  display:          flex;
+  align-items:      flex-start;
+  gap:              12px;
+  padding:          16px;
+  border:           1px solid var(--border-color-2);
+  border-radius:    10px;
+  background-color: var(--bg-surface);
+  cursor:           pointer;
+  transition:       border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.radio-card-group__card:hover:not(.radio-card-group__card--disabled) {
+  border-color: var(--color-orange);
+}
+
+.radio-card-group__card:has(.radio-card-group__input:focus-visible) {
+  border-color: var(--color-orange);
+  box-shadow:   var(--focus-ring);
+}
+
+.radio-card-group__card--selected {
+  border-color:     var(--color-orange);
+  background-color: var(--nav-link-active-bg);
+  box-shadow:       0 0 0 1px var(--color-orange);
+}
+
+.radio-card-group__card--disabled {
+  opacity: 0.5;
+  cursor:  not-allowed;
+}
+
+.form-field--error .radio-card-group__card {
+  border-color: var(--color-danger);
+}
+
+.radio-card-group__input {
+  position:       absolute;
+  width:          1px;
+  height:         1px;
+  margin:         0;
+  opacity:        0;
+  pointer-events: none;
+}
+
+.radio-card-group__icon {
+  width:            36px;
+  height:           36px;
+  flex-shrink:      0;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  border-radius:    8px;
+  background-color: var(--nav-link-hover-bg);
+  color:            var(--text-secondary);
+  transition:       background-color 0.15s ease, color 0.15s ease;
+}
+
+.radio-card-group__card--selected .radio-card-group__icon {
+  background-color: var(--color-orange);
+  color:            var(--color-navy);
+}
+
+.radio-card-group__text {
+  flex:           1;
+  min-width:      0;
+  display:        flex;
+  flex-direction: column;
+  gap:            4px;
+  font-family:    var(--font-body);
+}
+
+.radio-card-group__label {
+  font-family:    var(--font-heading);
+  font-size:      14px;
+  font-weight:    700;
+  letter-spacing: 0.01em;
+  color:          var(--text-primary);
+}
+
+.radio-card-group__description {
+  font-size:   12px;
+  line-height: 1.5;
+  color:       var(--text-secondary);
+}
+
+.radio-card-group__meta {
+  font-size:   11px;
+  font-weight: 600;
+  color:       var(--color-warning);
+}
+
+.radio-card-group__indicator {
+  width:         18px;
+  height:        18px;
+  flex-shrink:   0;
+  box-sizing:    border-box;
+  border:        1.5px solid var(--field-border);
+  border-radius: 50%;
+  transition:    border-color 0.15s ease, border-width 0.15s ease;
+}
+
+.radio-card-group__card--selected .radio-card-group__indicator {
+  border: 5px solid var(--color-orange);
+}
+
+/* ═══ DARK MODE ═══ */
+[data-theme="dark"] .radio-card-group__card {
+  background-color: var(--bg-surface-2);
+}
+
+[data-theme="dark"] .radio-card-group__card--selected {
+  background-color: rgba(255, 153, 0, 0.1);
+}

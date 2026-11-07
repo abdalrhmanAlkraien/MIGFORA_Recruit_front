@@ -1,0 +1,201 @@
+/* ─── Card ────────────────────────────────────────────────── */
+.auth-card {
+  background-color: var(--auth-card-bg);
+  border:           1px solid var(--auth-card-border);
+  border-radius:    20px;
+  padding:          48px 44px;
+  width:            100%;
+  max-width:        440px;
+  box-shadow:       0 32px 80px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card--wide {
+  max-width: 560px;
+}
+
+/* ─── Logo ────────────────────────────────────────────────── */
+.auth-card__logo {
+  font-family:    var(--font-heading);
+  font-size:      22px;
+  font-weight:    800;
+  letter-spacing: 0.06em;
+  color:          var(--auth-text-primary);
+  margin-bottom:  32px;
+}
+
+.auth-card__logo-accent {
+  color: var(--color-orange);
+}
+
+/* ─── Heading ─────────────────────────────────────────────── */
+.auth-card__heading {
+  margin-bottom: 32px;
+}
+
+.auth-card__title {
+  font-family:    var(--font-heading);
+  font-size:      26px;
+  font-weight:    700;
+  color:          var(--auth-text-primary);
+  letter-spacing: 0.01em;
+  margin-bottom:  6px;
+}
+
+.auth-card__subtitle {
+  font-family: var(--font-body);
+  font-size:   14px;
+  color:       var(--auth-text-muted);
+  font-weight: 300;
+}
+
+/* ─── Form ────────────────────────────────────────────────── */
+.auth-card__form {
+  display:        flex;
+  flex-direction: column;
+  gap:            18px;
+}
+
+/* ─── Grid (register 2-col) ───────────────────────────────── */
+.auth-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   14px;
+}
+
+.auth-grid > * {
+  min-width: 0;
+}
+
+/* ─── Field ───────────────────────────────────────────────── */
+.auth-field {
+  display:        flex;
+  flex-direction: column;
+  gap:            7px;
+}
+
+.auth-field__label-row {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+}
+
+.auth-field__label {
+  font-family:  var(--font-body);
+  font-size:    12px;
+  font-weight:  600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color:        var(--auth-text-secondary);
+}
+
+.auth-field__input-wrap {
+  position: relative;
+  display:  flex;
+  align-items: center;
+}
+
+.auth-field__input {
+  width:            100%;
+  box-sizing:       border-box;
+  font-family:      var(--font-body);
+  font-size:        14px;
+  font-weight:      400;
+  color:            var(--auth-text-primary);
+  background-color: var(--auth-input-bg);
+  border:           1px solid var(--auth-input-border);
+  border-radius:    10px;
+  padding:          12px 16px;
+  outline:          none;
+  transition:       border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.auth-field__input--has-icon {
+  padding-right: 44px;
+}
+
+.auth-field__input::placeholder {
+  color:       var(--auth-text-muted);
+  font-weight: 300;
+}
+
+.auth-field__input:focus {
+  border-color:     var(--color-orange);
+  box-shadow:       0 0 0 3px rgba(255, 153, 0, 0.15);
+  background-color: var(--auth-input-bg-focus);
+}
+
+.auth-field__eye {
+  position:    absolute;
+  right:       12px;
+  background:  none;
+  border:      none;
+  cursor:      pointer;
+  color:       var(--auth-text-muted);
+  display:     flex;
+  align-items: center;
+  padding:     4px;
+  transition:  color 0.15s;
+}
+
+.auth-field__eye:hover { color: var(--color-orange); }
+.auth-field__eye svg  { width: 18px; height: 18px; }
+
+/* ─── Footer ──────────────────────────────────────────────── */
+.auth-card__footer {
+  font-family: var(--font-body);
+  font-size:   13px;
+  color:       var(--auth-text-muted);
+  text-align:  center;
+  margin-top:  24px;
+}
+
+.auth-card__footer-link {
+  color:       var(--color-orange);
+  cursor:      pointer;
+  font-weight: 500;
+  transition:  color 0.15s;
+}
+
+.auth-card__footer-link:hover {
+  color: var(--color-orange-2);
+}
+
+.auth-card__theme {
+  display:         flex;
+  justify-content: center;
+  margin-top:      20px;
+  padding-top:     20px;
+  border-top:      1px solid var(--auth-card-border);
+}
+
+.auth-card__theme-btn {
+  display:      flex;
+  align-items:  center;
+  gap:          6px;
+  background:   none;
+  border:       none;
+  cursor:       pointer;
+  font-family:  var(--font-body);
+  font-size:    12px;
+  font-weight:  600;
+  color:        var(--color-orange);
+  padding:      6px 12px;
+  border-radius: 6px;
+  transition:   color 0.15s, background-color 0.15s;
+}
+
+.auth-card__theme-btn:hover {
+  color:            var(--color-orange-2);
+  background-color: rgba(255, 153, 0, 0.08);
+}
+
+/* ─── RTL ─────────────────────────────────────────────────── */
+[dir="rtl"] .auth-card          { direction: rtl; text-align: right; }
+[dir="rtl"] .auth-card__heading { text-align: right; }
+[dir="rtl"] .auth-field         { text-align: right; }
+[dir="rtl"] .auth-field__label  { text-align: right; }
+[dir="rtl"] .auth-field__input  { text-align: right; }
+[dir="rtl"] .auth-grid          { direction: rtl; }
+[dir="rtl"] .auth-card__footer  { direction: rtl; }
+[dir="rtl"] .auth-card__theme   { direction: rtl; }
+[dir="rtl"] .auth-card__theme-btn { flex-direction: row-reverse; }

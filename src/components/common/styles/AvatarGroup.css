@@ -1,0 +1,20 @@
+.avatar-group {
+  display:     inline-flex;
+  align-items: center;
+}
+
+.avatar-group__item {
+  display:       inline-flex;
+  border-radius: 50%;
+  box-shadow:    0 0 0 2px var(--bg-surface);
+}
+
+.avatar-group__item + .avatar-group__item {
+  margin-inline-start: -8px;
+}
+
+.avatar-group--xs .avatar-group__item + .avatar-group__item {
+  margin-inline-start: -6px;
+}
+
+/* ═══ DARK MODE ═══ — handled by --bg-surface */

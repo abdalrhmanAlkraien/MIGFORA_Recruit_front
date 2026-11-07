@@ -1,0 +1,131 @@
+.tag-input__control {
+  display:          flex;
+  flex-wrap:        wrap;
+  align-items:      center;
+  gap:              6px;
+  min-height:       42px;
+  box-sizing:       border-box;
+  padding-block:    6px;
+  padding-inline:   10px;
+  background-color: var(--field-bg);
+  border:           1px solid var(--field-border);
+  border-radius:    6px;
+  cursor:           text;
+  transition:       border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.tag-input__control--focused {
+  border-color:     var(--color-orange);
+  box-shadow:       var(--focus-ring);
+  background-color: var(--field-bg-focus);
+}
+
+.form-field--error .tag-input__control {
+  border-color: var(--color-danger);
+  box-shadow:   0 0 0 3px var(--color-danger-bg);
+}
+
+.tag-input__control--disabled {
+  opacity: 0.55;
+  cursor:  not-allowed;
+}
+
+.tag-input__tag {
+  display:          inline-flex;
+  align-items:      center;
+  gap:              4px;
+  max-width:        100%;
+  padding-block:    2px;
+  padding-inline:   8px 4px;
+  border-radius:    20px;
+  background-color: var(--nav-link-active-bg);
+  font-family:      var(--font-body);
+  font-size:        12px;
+  font-weight:      500;
+  color:            var(--text-primary);
+}
+
+.tag-input__tag-label {
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+}
+
+.tag-input__tag-remove {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  width:           16px;
+  height:          16px;
+  padding:         0;
+  border:          none;
+  border-radius:   50%;
+  background:      transparent;
+  color:           var(--text-secondary);
+  cursor:          pointer;
+}
+
+.tag-input__tag-remove:hover {
+  background-color: var(--nav-link-hover-bg);
+  color:            var(--text-primary);
+}
+
+.tag-input__input {
+  flex:        1;
+  min-width:   120px;
+  padding:     4px 2px;
+  border:      none;
+  outline:     none;
+  background:  transparent;
+  font-family: var(--font-body);
+  font-size:   14px;
+  color:       var(--text-primary);
+}
+
+.tag-input__input::placeholder {
+  color:       var(--text-muted);
+  font-weight: 300;
+}
+
+.tag-input__footer {
+  display:         flex;
+  align-items:     flex-start;
+  justify-content: space-between;
+  gap:             12px;
+}
+
+.tag-input__count {
+  margin-inline-start:  auto;
+  flex-shrink:          0;
+  font-family:          var(--font-body);
+  font-size:            11px;
+  font-variant-numeric: tabular-nums;
+  color:                var(--text-muted);
+}
+
+/* ─── Suggestions ─────────────────────────────────────────── */
+.tag-input__suggestions {
+  list-style: none;
+  margin:     0;
+  padding:    4px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.tag-input__suggestion {
+  padding-block:  8px;
+  padding-inline: 10px;
+  border-radius:  6px;
+  font-size:      13px;
+  color:          var(--text-primary);
+  cursor:         pointer;
+}
+
+.tag-input__suggestion--active {
+  background-color: var(--nav-link-hover-bg);
+}
+
+/* ═══ DARK MODE ═══ */
+[data-theme="dark"] .tag-input__tag {
+  background-color: rgba(255, 153, 0, 0.14);
+}

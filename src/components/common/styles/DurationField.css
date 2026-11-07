@@ -1,0 +1,20 @@
+.duration-field__control {
+  position:    relative;
+  display:     flex;
+  align-items: center;
+}
+
+.duration-field__icon {
+  position:           absolute;
+  inset-inline-start: 12px;
+  display:            flex;
+  color:              var(--text-muted);
+  pointer-events:     none;
+}
+
+.duration-field__input {
+  padding-inline-start: 36px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ═══ DARK MODE ═══ — handled by FormField.css */

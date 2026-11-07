@@ -1,0 +1,40 @@
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+
+.form-alert {
+  display:     flex;
+  align-items: center;
+  gap:         8px;
+  font-family: var(--font-body);
+  font-size:   13px;
+  font-weight: 500;
+  border-radius: 6px;
+  padding:     10px 14px;
+  border:      1px solid transparent;
+}
+
+.form-alert__icon {
+  display:     flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ─── Error ───────────────────────────────────────────────────────────────── */
+
+.form-alert--error {
+  color:            #DC2626;
+  background-color: #FEF2F2;
+  border-color:     #FECACA;
+}
+
+/* ─── Success ─────────────────────────────────────────────────────────────── */
+
+.form-alert--success {
+  color:            #16A34A;
+  background-color: #F0FDF4;
+  border-color:     #BBF7D0;
+}
+
+/* RTL — flex row reverses automatically with dir, force text alignment */
+.form-alert {
+  text-align: start;
+}

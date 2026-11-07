@@ -1,0 +1,55 @@
+.activity-list {
+  list-style:     none;
+  margin:         0;
+  padding:        0;
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+}
+
+.activity-list__item {
+  display:     flex;
+  align-items: flex-start;
+  gap:         10px;
+}
+
+.activity-list__body {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  min-width:      0;
+}
+
+.activity-list__text {
+  margin:      0;
+  font-family: var(--font-body);
+  font-size:   13px;
+  line-height: 1.5;
+  color:       var(--text-secondary);
+}
+
+.activity-list__actor,
+.activity-list__target {
+  font-weight: 600;
+  color:       var(--text-primary);
+}
+
+.activity-list__meta {
+  font-family: var(--font-body);
+  font-size:   11px;
+  color:       var(--text-muted);
+}
+
+.activity-list__loading {
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+}
+
+.activity-list__skeleton {
+  display:     flex;
+  align-items: flex-start;
+  gap:         10px;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

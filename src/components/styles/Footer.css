@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--bg-surface);
+  color:            var(--color-orange);
+  padding-block:    20px;
+  padding-inline:   32px;
+  display:          flex;
+  align-items:      center;
+  justify-content:  space-between;
+  font-family:      var(--font-body);
+  font-size:        12px;
+  font-weight:      400;
+  border-block-start: 1px solid var(--border-color);
+  transition:       background-color 0.2s ease;
+}
+
+.footer__copy    { color: var(--color-orange); }
+.footer__brand   { font-family: var(--font-heading); font-weight: 700; color: var(--color-orange); }
+.footer__accent  { color: var(--color-orange); }
+.footer__tagline { color: var(--text-muted); }

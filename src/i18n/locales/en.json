@@ -1,0 +1,275 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "save": "Save Changes",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close",
+    "edit": "Edit",
+    "back": "Back",
+    "dismiss": "Dismiss",
+    "search": "Search…",
+    "page_of": "Page {{current}} of {{total}}",
+    "items_count": "{{count}} {{label}}",
+    "remove": "Remove",
+    "more_actions": "More actions",
+    "error": "Something went wrong. Please try again.",
+    "saved": "Saved successfully."
+  },
+  "navbar": {
+    "toggle_sidebar": "Toggle sidebar",
+    "switch_light": "Switch to light mode",
+    "switch_dark": "Switch to dark mode",
+    "switch_arabic": "Switch to Arabic",
+    "switch_english": "Switch to English",
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "sidebar": {
+    "copyright": "© {{year}} MIGFORA",
+    "nav": {
+      "dashboard": "Dashboard"
+    }
+  },
+  "footer": {
+    "tagline": "Cloud & Technology Solutions"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your account to continue",
+      "username_label": "Username",
+      "email_label": "Email",
+      "phone_label": "Phone Number",
+      "password_label": "Password",
+      "submit": "Sign In",
+      "submitting": "Signing in…",
+      "no_account": "Don't have an account?",
+      "create_one": "Create one",
+      "switch_dark": "Switch to dark mode",
+      "switch_light": "Switch to light mode"
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Fill in your details to get started",
+      "full_name": "Full Name",
+      "full_name_placeholder": "John Doe",
+      "username": "Username",
+      "username_placeholder": "johndoe",
+      "email": "Email",
+      "email_placeholder": "john@email.com",
+      "phone": "Phone Number",
+      "phone_placeholder": "+966 5X XXX XXXX",
+      "password": "Password",
+      "password_placeholder": "Min. 8 characters",
+      "confirm_password": "Confirm Password",
+      "confirm_password_placeholder": "Repeat password",
+      "submit": "Create Account",
+      "submitting": "Creating account…",
+      "has_account": "Already have an account?",
+      "sign_in": "Sign in",
+      "passwords_no_match": "Passwords do not match.",
+      "success": "Registration successful!",
+      "failed": "Registration failed. Please try again."
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Your account details and settings.",
+    "edit_btn": "Edit Profile",
+    "drawer_title": "Edit Profile",
+    "name_label": "Name",
+    "name_placeholder": "Your full name",
+    "email_label": "Email",
+    "email_placeholder": "Your email address",
+    "save_success": "Profile updated successfully.",
+    "save_failed": "Failed to update profile. Please try again.",
+    "name_required": "Name is required.",
+    "email_required": "Email is required."
+  },
+  "status": {
+    "DONE": "Done",
+    "ACTIVE": "Active",
+    "COMPLETED": "Completed",
+    "PASSED": "Passed",
+    "SCHEDULED": "Scheduled",
+    "PENDING": "Pending",
+    "RUNNING": "Running",
+    "FAILED": "Failed",
+    "MISSED": "Missed",
+    "CRITICAL": "Critical",
+    "HIGH": "High",
+    "MEDIUM": "Medium",
+    "LOW": "Low",
+    "DRAFT": "Draft",
+    "UNKNOWN": "Unknown",
+    "BASIC": "Basic",
+    "GROWTH": "Growth",
+    "ENTERPRISE": "Enterprise",
+    "IN_REVIEW": "In review",
+    "CHANGES_REQUESTED": "Changes requested",
+    "APPROVED": "Approved",
+    "LOCKED": "Locked",
+    "REJECTED": "Rejected",
+    "SUPERSEDED": "Superseded",
+    "NEEDS_REVALIDATION": "Needs revalidation",
+    "QUEUED": "Queued",
+    "WAITING": "Waiting",
+    "CANCELLED": "Cancelled",
+    "RETIRED": "Retired",
+    "UPLOADING": "Uploading",
+    "OWNER": "Owner",
+    "VIEW": "View",
+    "EDIT": "Edit",
+    "REVIEW": "Review",
+    "FILM": "Film",
+    "SERIES": "Series",
+    "SHORT_STORIES": "Short stories"
+  },
+  "confirm_dialog": {
+    "cancel": "Cancel",
+    "type_to_confirm": "Type \"{{text}}\" to confirm"
+  },
+  "errors": {
+    "login_failed": "Login failed. Please check your credentials.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "not_found": {
+    "title": "Page Not Found",
+    "subtitle": "The page you're looking for doesn't exist or has been moved.",
+    "back_home": "Back to Dashboard"
+  },
+  "select": {
+    "placeholder": "Select…",
+    "no_options": "No options found"
+  },
+  "prompt": {
+    "placeholder": "Describe what you want to generate…",
+    "send": "Send",
+    "stop": "Stop generating",
+    "hint": "Enter to send · Shift + Enter for a new line",
+    "mention_hint": "@ to attach an artifact",
+    "context": "Attached context",
+    "remove_context": "Remove {{label}}",
+    "no_matches": "No matching artifacts"
+  },
+  "number": {
+    "increase": "Increase",
+    "decrease": "Decrease"
+  },
+  "duration": {
+    "hint": "e.g. 1:30:00, 45:00, 90 or 1h 30m",
+    "invalid": "Enter a duration like 1:30:00, 45:00 or 1h 30m",
+    "min": "Must be at least {{value}}",
+    "max": "Must be at most {{value}}"
+  },
+  "tags": {
+    "placeholder": "Add a tag…",
+    "hint": "Press Enter or comma to add",
+    "remove": "Remove {{tag}}"
+  },
+  "upload": {
+    "title": "Drag & drop files here, or",
+    "browse": "browse",
+    "drop_here": "Drop files to upload",
+    "hint_types": "Accepted: {{types}}",
+    "hint_size": "Max {{max}} per file",
+    "error_type": "{{name}} — file type not allowed",
+    "error_size": "{{name}} — larger than {{max}}",
+    "error_count": "{{name}} — too many files (max {{max}})"
+  },
+  "file": {
+    "pending": "Waiting",
+    "uploading": "Uploading {{progress}}%",
+    "done": "Uploaded",
+    "failed": "Upload failed",
+    "retry": "Retry upload",
+    "remove": "Remove file"
+  },
+  "table": {
+    "empty": "No records found",
+    "select_all": "Select all rows",
+    "select_row": "Select row",
+    "actions": "Actions"
+  },
+  "copy": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "failed": "Couldn't copy to clipboard"
+  },
+  "time": {
+    "just_now": "just now"
+  },
+  "breadcrumbs": {
+    "label": "Breadcrumb"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Welcome back, {{name}}. Here's where your productions stand.",
+    "refresh": "Refresh",
+    "new_project": "+ New Project",
+    "stats": {
+      "active_projects": "Active projects",
+      "projects_change": "{{count}} new this month",
+      "pending_decisions": "Pending decisions",
+      "decisions_hint": "Waiting for your review",
+      "running_jobs": "Running jobs",
+      "queued_jobs": "{{count}} queued",
+      "spend_this_month": "Spend this month",
+      "budget_of": "of {{budget}} budget"
+    },
+    "projects": {
+      "title": "Projects in progress",
+      "subtitle": "Current stage and overall progress",
+      "project": "Project",
+      "format": "Format",
+      "stage": "Stage",
+      "progress": "Progress",
+      "updated": "Updated",
+      "empty_title": "No projects yet",
+      "empty_subtitle": "Create your first film, series or short story to get started."
+    },
+    "stage": {
+      "STORY": "Story treatment",
+      "CONTEXT": "Project context",
+      "STRUCTURE": "Film structure",
+      "ASSETS": "Production assets",
+      "DIRECTION": "Global direction",
+      "CHAPTER_PLANNING": "Chapter planning",
+      "SCENE_PLANNING": "Scene planning",
+      "SHOT_PLANNING": "Shot planning",
+      "GENERATION": "Generation",
+      "QC": "Quality control",
+      "ASSEMBLY": "Assembly",
+      "FINAL_REVIEW": "Final review",
+      "DELIVERY": "Delivery"
+    },
+    "spend": {
+      "title": "Generation spend",
+      "subtitle": "Provider costs per month",
+      "empty": "No spend recorded yet"
+    },
+    "decisions": {
+      "title": "Pending decisions",
+      "subtitle": "Versions waiting for approval",
+      "empty": "You're all caught up"
+    },
+    "jobs": {
+      "title": "Active jobs",
+      "subtitle": "Running or waiting on a provider",
+      "empty": "No jobs running"
+    },
+    "activity": {
+      "title": "Recent activity",
+      "empty": "No activity yet",
+      "submitted": "submitted",
+      "approved": "approved",
+      "requested_changes": "requested changes on",
+      "locked": "locked",
+      "generated": "generated",
+      "invited": "invited"
+    }
+  }
+}

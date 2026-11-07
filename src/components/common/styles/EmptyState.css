@@ -1,0 +1,64 @@
+/* ─── Wrapper ─────────────────────────────────────────────── */
+.empty-state {
+  display:         flex;
+  flex-direction:  column;
+  align-items:     center;
+  justify-content: center;
+  padding:         48px 24px;
+  text-align:      center;
+  gap:             8px;
+}
+
+/* ─── Icon ────────────────────────────────────────────────── */
+.empty-state__icon {
+  width:           56px;
+  height:          56px;
+  border-radius:   14px;
+  background-color: var(--nav-link-hover-bg);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  color:           var(--text-muted);
+  margin-bottom:   8px;
+}
+
+/* ─── Title ───────────────────────────────────────────────── */
+.empty-state__title {
+  font-family:    var(--font-heading);
+  font-size:      15px;
+  font-weight:    700;
+  color:          var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+/* ─── Subtitle ────────────────────────────────────────────── */
+.empty-state__subtitle {
+  font-family: var(--font-body);
+  font-size:   13px;
+  font-weight: 400;
+  color:       var(--text-secondary);
+  max-width:   320px;
+  line-height: 1.6;
+}
+
+/* ─── Action ──────────────────────────────────────────────── */
+.empty-state__action {
+  margin-top: 16px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DARK MODE
+═══════════════════════════════════════════════════════════ */
+
+[data-theme="dark"] .empty-state__title {
+  color: var(--color-orange);
+}
+
+[data-theme="dark"] .empty-state__subtitle {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .empty-state__icon {
+  background-color: rgba(255, 153, 0, 0.08);
+  color:            var(--color-orange);
+}

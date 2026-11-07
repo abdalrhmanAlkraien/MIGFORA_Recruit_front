@@ -1,0 +1,42 @@
+.not-found {
+  min-height:      100vh;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  background-color: var(--bg-app);
+  padding:         32px;
+}
+
+.not-found__content {
+  display:         flex;
+  flex-direction:  column;
+  align-items:     center;
+  text-align:      center;
+  gap:             16px;
+  max-width:       480px;
+}
+
+.not-found__code {
+  font-family:    var(--font-heading);
+  font-size:      120px;
+  font-weight:    800;
+  line-height:    1;
+  color:          var(--color-orange);
+  letter-spacing: -4px;
+}
+
+.not-found__title {
+  font-family:    var(--font-heading);
+  font-size:      28px;
+  font-weight:    700;
+  color:          var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+.not-found__subtitle {
+  font-family: var(--font-body);
+  font-size:   15px;
+  color:       var(--text-secondary);
+  line-height: 1.6;
+  max-width:   360px;
+}

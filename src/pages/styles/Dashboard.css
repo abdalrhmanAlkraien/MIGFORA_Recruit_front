@@ -1,0 +1,38 @@
+.dashboard {
+  display:        flex;
+  flex-direction: column;
+  gap:            24px;
+  padding:        32px;
+}
+
+.dashboard .page-header {
+  margin-block-end: 0;
+}
+
+.dashboard__grid {
+  display:               grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap:                   24px;
+  align-items:           start;
+}
+
+.dashboard__column {
+  display:        flex;
+  flex-direction: column;
+  gap:            24px;
+  min-width:      0;
+}
+
+@media (max-width: 1100px) {
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 16px;
+  }
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

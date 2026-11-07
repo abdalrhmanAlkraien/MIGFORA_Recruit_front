@@ -1,0 +1,26 @@
+.section-divider {
+  display:          flex;
+  align-items:      center;
+  gap:              12px;
+  margin-block:     28px 16px;
+}
+
+.section-divider__label {
+  font-family:    var(--font-heading);
+  font-size:      0.75rem;
+  font-weight:    700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--color-orange);
+  white-space:    nowrap;
+}
+
+.section-divider__line {
+  flex:       1;
+  height:     1px;
+  background: rgba(255, 153, 0, 0.2);
+}
+
+[data-theme="dark"] .section-divider__line {
+  background: rgba(255, 153, 0, 0.3);
+}

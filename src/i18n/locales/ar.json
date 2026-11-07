@@ -1,0 +1,275 @@
+{
+  "common": {
+    "loading": "جاري التحميل…",
+    "saving": "جاري الحفظ…",
+    "cancel": "إلغاء",
+    "save": "حفظ التغييرات",
+    "delete": "حذف",
+    "confirm": "تأكيد",
+    "close": "إغلاق",
+    "edit": "تعديل",
+    "back": "رجوع",
+    "dismiss": "إغلاق",
+    "search": "بحث…",
+    "page_of": "صفحة {{current}} من {{total}}",
+    "items_count": "{{count}} {{label}}",
+    "remove": "Remove",
+    "more_actions": "More actions",
+    "error": "Something went wrong. Please try again.",
+    "saved": "Saved successfully."
+  },
+  "navbar": {
+    "toggle_sidebar": "تبديل الشريط الجانبي",
+    "switch_light": "التبديل إلى الوضع الفاتح",
+    "switch_dark": "التبديل إلى الوضع الداكن",
+    "switch_arabic": "التبديل إلى العربية",
+    "switch_english": "التبديل إلى الإنجليزية",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول"
+  },
+  "sidebar": {
+    "copyright": "© {{year}} MIGFORA",
+    "nav": {
+      "dashboard": "لوحة التحكم"
+    }
+  },
+  "footer": {
+    "tagline": "حلول السحابة والتقنية"
+  },
+  "auth": {
+    "login": {
+      "title": "مرحباً بعودتك",
+      "subtitle": "سجّل دخولك للمتابعة",
+      "username_label": "اسم المستخدم",
+      "email_label": "البريد الإلكتروني",
+      "phone_label": "رقم الهاتف",
+      "password_label": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "submitting": "جاري تسجيل الدخول…",
+      "no_account": "ليس لديك حساب؟",
+      "create_one": "أنشئ حساباً",
+      "switch_dark": "التبديل إلى الوضع الداكن",
+      "switch_light": "التبديل إلى الوضع الفاتح"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "subtitle": "أدخل بياناتك للبدء",
+      "full_name": "الاسم الكامل",
+      "full_name_placeholder": "محمد عبدالله",
+      "username": "اسم المستخدم",
+      "username_placeholder": "mohammed99",
+      "email": "البريد الإلكتروني",
+      "email_placeholder": "john@email.com",
+      "phone": "رقم الهاتف",
+      "phone_placeholder": "+966 5X XXX XXXX",
+      "password": "كلمة المرور",
+      "password_placeholder": "8 أحرف على الأقل",
+      "confirm_password": "تأكيد كلمة المرور",
+      "confirm_password_placeholder": "أعد إدخال كلمة المرور",
+      "submit": "إنشاء الحساب",
+      "submitting": "جاري إنشاء الحساب…",
+      "has_account": "لديك حساب بالفعل؟",
+      "sign_in": "تسجيل الدخول",
+      "passwords_no_match": "كلمتا المرور غير متطابقتين.",
+      "success": "تم إنشاء الحساب بنجاح!",
+      "failed": "فشل إنشاء الحساب. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "subtitle": "بيانات حسابك وإعداداتك.",
+    "edit_btn": "تعديل الملف",
+    "drawer_title": "تعديل الملف الشخصي",
+    "name_label": "الاسم",
+    "name_placeholder": "اسمك الكامل",
+    "email_label": "البريد الإلكتروني",
+    "email_placeholder": "بريدك الإلكتروني",
+    "save_success": "تم تحديث الملف الشخصي بنجاح.",
+    "save_failed": "فشل تحديث الملف. يرجى المحاولة مرة أخرى.",
+    "name_required": "الاسم مطلوب.",
+    "email_required": "البريد الإلكتروني مطلوب."
+  },
+  "status": {
+    "DONE": "مكتمل",
+    "ACTIVE": "نشط",
+    "COMPLETED": "منتهي",
+    "PASSED": "ناجح",
+    "SCHEDULED": "مجدول",
+    "PENDING": "قيد الانتظار",
+    "RUNNING": "جارٍ",
+    "FAILED": "فشل",
+    "MISSED": "فائت",
+    "CRITICAL": "حرج",
+    "HIGH": "عالٍ",
+    "MEDIUM": "متوسط",
+    "LOW": "منخفض",
+    "DRAFT": "مسودة",
+    "UNKNOWN": "غير معروف",
+    "BASIC": "أساسي",
+    "GROWTH": "نمو",
+    "ENTERPRISE": "مؤسسي",
+    "IN_REVIEW": "In review",
+    "CHANGES_REQUESTED": "Changes requested",
+    "APPROVED": "Approved",
+    "LOCKED": "Locked",
+    "REJECTED": "Rejected",
+    "SUPERSEDED": "Superseded",
+    "NEEDS_REVALIDATION": "Needs revalidation",
+    "QUEUED": "Queued",
+    "WAITING": "Waiting",
+    "CANCELLED": "Cancelled",
+    "RETIRED": "Retired",
+    "UPLOADING": "Uploading",
+    "OWNER": "Owner",
+    "VIEW": "View",
+    "EDIT": "Edit",
+    "REVIEW": "Review",
+    "FILM": "Film",
+    "SERIES": "Series",
+    "SHORT_STORIES": "Short stories"
+  },
+  "confirm_dialog": {
+    "cancel": "إلغاء",
+    "type_to_confirm": "Type \"{{text}}\" to confirm"
+  },
+  "errors": {
+    "login_failed": "فشل تسجيل الدخول. يرجى التحقق من بياناتك.",
+    "generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+  },
+  "not_found": {
+    "title": "الصفحة غير موجودة",
+    "subtitle": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "back_home": "العودة إلى لوحة التحكم"
+  },
+  "select": {
+    "placeholder": "Select…",
+    "no_options": "No options found"
+  },
+  "prompt": {
+    "placeholder": "Describe what you want to generate…",
+    "send": "Send",
+    "stop": "Stop generating",
+    "hint": "Enter to send · Shift + Enter for a new line",
+    "mention_hint": "@ to attach an artifact",
+    "context": "Attached context",
+    "remove_context": "Remove {{label}}",
+    "no_matches": "No matching artifacts"
+  },
+  "number": {
+    "increase": "Increase",
+    "decrease": "Decrease"
+  },
+  "duration": {
+    "hint": "e.g. 1:30:00, 45:00, 90 or 1h 30m",
+    "invalid": "Enter a duration like 1:30:00, 45:00 or 1h 30m",
+    "min": "Must be at least {{value}}",
+    "max": "Must be at most {{value}}"
+  },
+  "tags": {
+    "placeholder": "Add a tag…",
+    "hint": "Press Enter or comma to add",
+    "remove": "Remove {{tag}}"
+  },
+  "upload": {
+    "title": "Drag & drop files here, or",
+    "browse": "browse",
+    "drop_here": "Drop files to upload",
+    "hint_types": "Accepted: {{types}}",
+    "hint_size": "Max {{max}} per file",
+    "error_type": "{{name}} — file type not allowed",
+    "error_size": "{{name}} — larger than {{max}}",
+    "error_count": "{{name}} — too many files (max {{max}})"
+  },
+  "file": {
+    "pending": "Waiting",
+    "uploading": "Uploading {{progress}}%",
+    "done": "Uploaded",
+    "failed": "Upload failed",
+    "retry": "Retry upload",
+    "remove": "Remove file"
+  },
+  "table": {
+    "empty": "No records found",
+    "select_all": "Select all rows",
+    "select_row": "Select row",
+    "actions": "Actions"
+  },
+  "copy": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "failed": "Couldn't copy to clipboard"
+  },
+  "time": {
+    "just_now": "just now"
+  },
+  "breadcrumbs": {
+    "label": "Breadcrumb"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Welcome back, {{name}}. Here's where your productions stand.",
+    "refresh": "Refresh",
+    "new_project": "+ New Project",
+    "stats": {
+      "active_projects": "Active projects",
+      "projects_change": "{{count}} new this month",
+      "pending_decisions": "Pending decisions",
+      "decisions_hint": "Waiting for your review",
+      "running_jobs": "Running jobs",
+      "queued_jobs": "{{count}} queued",
+      "spend_this_month": "Spend this month",
+      "budget_of": "of {{budget}} budget"
+    },
+    "projects": {
+      "title": "Projects in progress",
+      "subtitle": "Current stage and overall progress",
+      "project": "Project",
+      "format": "Format",
+      "stage": "Stage",
+      "progress": "Progress",
+      "updated": "Updated",
+      "empty_title": "No projects yet",
+      "empty_subtitle": "Create your first film, series or short story to get started."
+    },
+    "stage": {
+      "STORY": "Story treatment",
+      "CONTEXT": "Project context",
+      "STRUCTURE": "Film structure",
+      "ASSETS": "Production assets",
+      "DIRECTION": "Global direction",
+      "CHAPTER_PLANNING": "Chapter planning",
+      "SCENE_PLANNING": "Scene planning",
+      "SHOT_PLANNING": "Shot planning",
+      "GENERATION": "Generation",
+      "QC": "Quality control",
+      "ASSEMBLY": "Assembly",
+      "FINAL_REVIEW": "Final review",
+      "DELIVERY": "Delivery"
+    },
+    "spend": {
+      "title": "Generation spend",
+      "subtitle": "Provider costs per month",
+      "empty": "No spend recorded yet"
+    },
+    "decisions": {
+      "title": "Pending decisions",
+      "subtitle": "Versions waiting for approval",
+      "empty": "You're all caught up"
+    },
+    "jobs": {
+      "title": "Active jobs",
+      "subtitle": "Running or waiting on a provider",
+      "empty": "No jobs running"
+    },
+    "activity": {
+      "title": "Recent activity",
+      "empty": "No activity yet",
+      "submitted": "submitted",
+      "approved": "approved",
+      "requested_changes": "requested changes on",
+      "locked": "locked",
+      "generated": "generated",
+      "invited": "invited"
+    }
+  }
+}

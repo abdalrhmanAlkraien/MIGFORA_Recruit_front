@@ -1,0 +1,63 @@
+.skeleton {
+  display:         block;
+  border-radius:   6px;
+  background:      linear-gradient(
+                     90deg,
+                     var(--skeleton-base) 25%,
+                     var(--skeleton-shine) 50%,
+                     var(--skeleton-base) 75%
+                   );
+  background-size: 200% 100%;
+  animation:       skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+.skeleton-group {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+  width:          100%;
+}
+
+/* ─── Text ────────────────────────────────────────────────── */
+.skeleton--text {
+  height:        12px;
+  border-radius: 4px;
+}
+
+.skeleton--text.skeleton--sm   { width: 40%; }
+.skeleton--text.skeleton--md   { width: 60%; }
+.skeleton--text.skeleton--lg   { width: 80%; }
+.skeleton--text.skeleton--full { width: 100%; }
+
+/* ─── Circle ──────────────────────────────────────────────── */
+.skeleton--circle {
+  display:       inline-block;
+  flex-shrink:   0;
+  border-radius: 50%;
+}
+
+.skeleton--circle.skeleton--sm { width: 24px; height: 24px; }
+.skeleton--circle.skeleton--md { width: 32px; height: 32px; }
+.skeleton--circle.skeleton--lg { width: 40px; height: 40px; }
+
+/* ─── Rect ────────────────────────────────────────────────── */
+.skeleton--rect {
+  width:         100%;
+  border-radius: 10px;
+}
+
+.skeleton--rect.skeleton--sm   { height: 80px; }
+.skeleton--rect.skeleton--md   { height: 160px; }
+.skeleton--rect.skeleton--lg   { height: 240px; }
+.skeleton--rect.skeleton--full { height: 100%; }
+
+@keyframes skeleton-shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}
+
+/* ═══ DARK MODE ═══ — handled by --skeleton-* tokens */

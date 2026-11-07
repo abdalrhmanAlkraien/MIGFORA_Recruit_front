@@ -1,0 +1,84 @@
+.checkbox-field {
+  display:        flex;
+  flex-direction: column;
+  gap:            4px;
+}
+
+.checkbox-field__row {
+  position:    relative;
+  display:     inline-flex;
+  align-items: flex-start;
+  gap:         10px;
+  font-family: var(--font-body);
+  cursor:      pointer;
+}
+
+.checkbox-field--disabled .checkbox-field__row {
+  opacity: 0.55;
+  cursor:  not-allowed;
+}
+
+.checkbox-field__input {
+  position:       absolute;
+  width:          1px;
+  height:         1px;
+  margin:         0;
+  opacity:        0;
+  pointer-events: none;
+}
+
+.checkbox-field__box {
+  width:              18px;
+  height:             18px;
+  flex-shrink:        0;
+  margin-block-start: 1px;
+  box-sizing:         border-box;
+  display:            flex;
+  align-items:        center;
+  justify-content:    center;
+  border:             1.5px solid var(--field-border);
+  border-radius:      5px;
+  background-color:   var(--field-bg);
+  color:              var(--color-navy);
+  transition:         background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.checkbox-field__row:hover .checkbox-field__box {
+  border-color: var(--color-orange);
+}
+
+.checkbox-field__input:focus-visible + .checkbox-field__box {
+  border-color: var(--color-orange);
+  box-shadow:   var(--focus-ring);
+}
+
+.checkbox-field__input:checked + .checkbox-field__box,
+.checkbox-field__input:indeterminate + .checkbox-field__box {
+  background-color: var(--color-orange);
+  border-color:     var(--color-orange);
+}
+
+.checkbox-field--error .checkbox-field__box {
+  border-color: var(--color-danger);
+}
+
+.checkbox-field__text {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+}
+
+.checkbox-field__label {
+  font-size:   14px;
+  font-weight: 500;
+  line-height: 20px;
+  color:       var(--text-primary);
+}
+
+.checkbox-field__description {
+  font-size:   12px;
+  line-height: 1.5;
+  color:       var(--text-secondary);
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

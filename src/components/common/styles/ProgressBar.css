@@ -1,0 +1,94 @@
+.progress-bar {
+  --progress-color: var(--color-orange);
+  display:          flex;
+  flex-direction:   column;
+  gap:              6px;
+  width:            100%;
+  font-family:      var(--font-body);
+}
+
+.progress-bar--success { --progress-color: var(--color-success); }
+.progress-bar--warning { --progress-color: var(--color-warning); }
+.progress-bar--danger  { --progress-color: var(--color-danger); }
+.progress-bar--info    { --progress-color: var(--color-info); }
+
+.progress-bar__header {
+  display:         flex;
+  align-items:     baseline;
+  justify-content: space-between;
+  gap:             12px;
+}
+
+.progress-bar__label {
+  font-size:   13px;
+  font-weight: 500;
+  color:       var(--text-primary);
+}
+
+.progress-bar__value {
+  font-size:            12px;
+  font-variant-numeric: tabular-nums;
+  color:                var(--text-secondary);
+}
+
+.progress-bar__native,
+.progress-bar__track {
+  display:          block;
+  width:            100%;
+  height:           8px;
+  border:           none;
+  border-radius:    999px;
+  overflow:         hidden;
+  appearance:       none;
+  background-color: var(--border-color);
+}
+
+.progress-bar--sm .progress-bar__native,
+.progress-bar--sm .progress-bar__track {
+  height: 4px;
+}
+
+.progress-bar__native::-webkit-progress-bar {
+  background-color: var(--border-color);
+  border-radius:    999px;
+}
+
+.progress-bar__native::-webkit-progress-value {
+  background-color: var(--progress-color);
+  border-radius:    999px;
+  transition:       width 0.3s ease;
+}
+
+.progress-bar__native::-moz-progress-bar {
+  background-color: var(--progress-color);
+  border-radius:    999px;
+}
+
+.progress-bar__track {
+  position: relative;
+}
+
+.progress-bar__indeterminate {
+  position:         absolute;
+  inset-block:      0;
+  width:            35%;
+  border-radius:    999px;
+  background-color: var(--progress-color);
+  animation:        progress-indeterminate 1.2s ease-in-out infinite;
+}
+
+@keyframes progress-indeterminate {
+  from { inset-inline-start: -35%; }
+  to   { inset-inline-start: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar__indeterminate {
+    animation:          none;
+    inset-inline-start: 0;
+    width:              100%;
+    opacity:            0.5;
+  }
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

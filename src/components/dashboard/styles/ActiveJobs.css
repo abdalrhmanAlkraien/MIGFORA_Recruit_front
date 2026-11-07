@@ -1,0 +1,49 @@
+.job-list {
+  list-style:     none;
+  margin:         0;
+  padding:        0;
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+}
+
+.job-list__item {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+}
+
+.job-list__header {
+  display:         flex;
+  align-items:     flex-start;
+  justify-content: space-between;
+  gap:             12px;
+}
+
+.job-list__text {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  min-width:      0;
+}
+
+.job-list__label {
+  font-family: var(--font-body);
+  font-size:   14px;
+  font-weight: 500;
+  color:       var(--text-primary);
+}
+
+.job-list__meta {
+  font-family: var(--font-body);
+  font-size:   12px;
+  color:       var(--text-secondary);
+}
+
+.job-list__loading {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+}
+
+/* ═══ DARK MODE ═══ — handled by semantic tokens */

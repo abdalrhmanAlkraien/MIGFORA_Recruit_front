@@ -1,0 +1,23 @@
+.app-layout {
+  min-height:     100vh;
+  display:        flex;
+  flex-direction: column;
+}
+
+.app-layout__main {
+  margin-top:          var(--navbar-height);
+  flex:                1;
+  transition:          margin-inline-start 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height:          calc(100vh - var(--navbar-height));
+}
+
+.app-layout--sidebar-open   .app-layout__main { margin-inline-start: var(--sidebar-width); }
+.app-layout--sidebar-closed .app-layout__main { margin-inline-start: 52px; }
+
+.app-layout footer {
+  transition: margin-inline-start 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-layout--sidebar-open   footer { margin-inline-start: var(--sidebar-width); }
+.app-layout--sidebar-closed footer { margin-inline-start: 52px; }
+
